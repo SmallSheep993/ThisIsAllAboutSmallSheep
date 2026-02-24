@@ -4,20 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>This is all about me</title>
-  <meta name="description" content="Personal website of SmallSheep. About, projects, things I like, movie list, and contact." />
+  <meta name="description" content="Personal website of SmallSheep." />
   <meta name="theme-color" content="#111111" />
-  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="container header" id="top">
+  <header class="container header">
     <nav class="nav">
-      <a class="brand" href="#top" aria-label="Go to top">This is all about me</a>
-
+      <a class="brand" href="index.html">This is all about me</a>
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="things.html">Things I Like</a>
         <a href="movies.html">Movie list</a>
         <a href="#contact">Contact</a>
@@ -27,125 +25,91 @@
     <div class="hero">
       <h1>This is all about me</h1>
       <p class="subtitle">
-        A tiny corner of the internet where I share what I build, what I learn, and how to reach me.
+        A small corner of the internet where I share what I build and what I enjoy.
       </p>
 
       <div class="cta-row">
-        <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn primary" href="projects.html">View Projects</a>
         <a class="btn" href="movies.html">Movie list</a>
-        <a class="btn" href="#contact">Contact</a>
       </div>
     </div>
   </header>
 
   <main class="container">
+
+    <!-- About Section -->
     <section id="about" class="section">
-      <h2>About</h2>
-
+      <h2>About Me</h2>
       <p>
-        Hi, I’m <strong>SmallSheep</strong>. I’m interested in building clean, practical things on the web.
-        I like simple design, readable code, and projects that actually ship.
+        Hi, I’m <strong>SmallSheep</strong>. I enjoy building simple and practical web experiences.
+        I focus on clarity, structure, and shipping real projects.
       </p>
-
-      <ul>
-        <li><strong>What I do:</strong> Front-end web projects, small tools, and experiments.</li>
-        <li><strong>What I’m learning:</strong> Better UI structure, JavaScript fundamentals, and product thinking.</li>
-        <li><strong>What I value:</strong> Clarity, consistency, and finishing what I start.</li>
-      </ul>
-
-      <p class="muted">
-        Tip: keep this section short. The goal is to help people understand you in 10 seconds, not 10 paragraphs.
+      <p>
+        I’m constantly learning and refining my skills in front-end development and product thinking.
       </p>
     </section>
 
-    <section class="section" id="now">
-      <h2>Now</h2>
-      <p>
-        Currently working on improving this website, polishing my projects, and building a habit of shipping small updates.
-      </p>
-      <p class="muted">
-        Update this occasionally. It makes your site feel alive (which is rare on the internet).
-      </p>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="section-header">
-        <h2>Projects</h2>
-        <p class="muted">A few things I’ve worked on. Selected, not spammed.</p>
-      </div>
+    <!-- Explore Section -->
+    <section class="section">
+      <h2>Explore</h2>
 
       <ul class="cards">
         <li class="card">
-          <h3>Project One</h3>
-          <p>
-            One sentence: what it is, what you built, and the outcome.
-          </p>
-          <p class="muted">
-            Tech: HTML, CSS, JavaScript
-          </p>
+          <h3>Projects</h3>
+          <p>Things I’ve built and shipped.</p>
           <div class="card-links">
-            <a href="#" target="_blank" rel="noreferrer">Live</a>
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="projects.html">Open</a>
           </div>
         </li>
 
         <li class="card">
-          <h3>Project Two</h3>
-          <p>
-            Keep it concrete. What problem did it solve? What tech did you use?
-          </p>
-          <p class="muted">
-            Tech: (add yours)
-          </p>
+          <h3>Things I Like</h3>
+          <p>Preferences and interests that shape how I think.</p>
           <div class="card-links">
-            <a href="#" target="_blank" rel="noreferrer">Live</a>
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="things.html">Open</a>
           </div>
         </li>
 
         <li class="card">
-          <h3>Project Three</h3>
-          <p>
-            Add screenshots later if you want. Clarity beats decoration.
-          </p>
-          <p class="muted">
-            Tech: (add yours)
-          </p>
+          <h3>Movie list</h3>
+          <p>Movies I liked enough to remember.</p>
           <div class="card-links">
-            <a href="#" target="_blank" rel="noreferrer">Live</a>
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="movies.html">Open</a>
           </div>
         </li>
       </ul>
+    </section>
 
+    <!-- Now Section -->
+    <section class="section">
+      <h2>Now</h2>
+      <p>
+        Currently improving this website and refining my projects.
+      </p>
       <p class="muted">
-        Want more? Add a dedicated <strong>projects.html</strong> later and link it here. Your future self will thank you.
+        This page evolves as I do.
       </p>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section">
       <h2>Contact</h2>
-
-      <p>
-        Email:
-        <a href="mailto:you@example.com">you@example.com</a>
-        <span class="muted">(change this to your email)</span>
-      </p>
-
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
       <p>
         GitHub:
-        <a href="https://github.com/SmallSheep993" target="_blank" rel="noreferrer">@SmallSheep993</a>
+        <a href="https://github.com/SmallSheep993" target="_blank" rel="noreferrer">
+          @SmallSheep993
+        </a>
       </p>
-
       <p class="muted">
-        Optional: add LinkedIn / X / Instagram here, but only if you actually want people to click them.
-        Quality over noise.
+        Feel free to reach out.
       </p>
     </section>
+
   </main>
 
   <footer class="container footer">
-    <small>© <span id="year"></span> SmallSheep. All rights reserved.</small>
+    <small>© <span id="year"></span> SmallSheep</small>
   </footer>
 
   <script src="script.js"></script>
