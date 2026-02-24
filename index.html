@@ -4,24 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>This is all about me</title>
-  <meta name="description" content="Personal website of SmallSheep. Projects, about, and contact." />
+  <meta name="description" content="Personal website of SmallSheep. About, projects, things I like, movie list, and contact." />
+  <meta name="theme-color" content="#111111" />
   <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header class="container header">
+  <header class="container header" id="top">
     <nav class="nav">
       <a class="brand" href="#top" aria-label="Go to top">This is all about me</a>
+
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="things.html">Things I Like</a>
         <a href="#projects">Projects</a>
+        <a href="things.html">Things I Like</a>
+        <a href="movies.html">Movie list</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
 
-    <div class="hero" id="top">
+    <div class="hero">
       <h1>This is all about me</h1>
       <p class="subtitle">
         A tiny corner of the internet where I share what I build, what I learn, and how to reach me.
@@ -29,6 +32,7 @@
 
       <div class="cta-row">
         <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn" href="movies.html">Movie list</a>
         <a class="btn" href="#contact">Contact</a>
       </div>
     </div>
@@ -37,19 +41,37 @@
   <main class="container">
     <section id="about" class="section">
       <h2>About</h2>
+
       <p>
         Hi, I’m <strong>SmallSheep</strong>. I’m interested in building clean, practical things on the web.
         I like simple design, readable code, and projects that actually ship.
       </p>
+
+      <ul>
+        <li><strong>What I do:</strong> Front-end web projects, small tools, and experiments.</li>
+        <li><strong>What I’m learning:</strong> Better UI structure, JavaScript fundamentals, and product thinking.</li>
+        <li><strong>What I value:</strong> Clarity, consistency, and finishing what I start.</li>
+      </ul>
+
       <p class="muted">
-        Replace this text with your real bio. Keep it short, specific, and honest.
+        Tip: keep this section short. The goal is to help people understand you in 10 seconds, not 10 paragraphs.
+      </p>
+    </section>
+
+    <section class="section" id="now">
+      <h2>Now</h2>
+      <p>
+        Currently working on improving this website, polishing my projects, and building a habit of shipping small updates.
+      </p>
+      <p class="muted">
+        Update this occasionally. It makes your site feel alive (which is rare on the internet).
       </p>
     </section>
 
     <section id="projects" class="section">
       <div class="section-header">
         <h2>Projects</h2>
-        <p class="muted">A few things I’ve worked on.</p>
+        <p class="muted">A few things I’ve worked on. Selected, not spammed.</p>
       </div>
 
       <ul class="cards">
@@ -57,6 +79,9 @@
           <h3>Project One</h3>
           <p>
             One sentence: what it is, what you built, and the outcome.
+          </p>
+          <p class="muted">
+            Tech: HTML, CSS, JavaScript
           </p>
           <div class="card-links">
             <a href="#" target="_blank" rel="noreferrer">Live</a>
@@ -69,6 +94,9 @@
           <p>
             Keep it concrete. What problem did it solve? What tech did you use?
           </p>
+          <p class="muted">
+            Tech: (add yours)
+          </p>
           <div class="card-links">
             <a href="#" target="_blank" rel="noreferrer">Live</a>
             <a href="#" target="_blank" rel="noreferrer">Code</a>
@@ -80,16 +108,24 @@
           <p>
             Add screenshots later if you want. Clarity beats decoration.
           </p>
+          <p class="muted">
+            Tech: (add yours)
+          </p>
           <div class="card-links">
             <a href="#" target="_blank" rel="noreferrer">Live</a>
             <a href="#" target="_blank" rel="noreferrer">Code</a>
           </div>
         </li>
       </ul>
+
+      <p class="muted">
+        Want more? Add a dedicated <strong>projects.html</strong> later and link it here. Your future self will thank you.
+      </p>
     </section>
 
     <section id="contact" class="section">
       <h2>Contact</h2>
+
       <p>
         Email:
         <a href="mailto:you@example.com">you@example.com</a>
@@ -102,7 +138,8 @@
       </p>
 
       <p class="muted">
-        Optional: add LinkedIn / X / Instagram links here, but only if you actually want people to click them.
+        Optional: add LinkedIn / X / Instagram here, but only if you actually want people to click them.
+        Quality over noise.
       </p>
     </section>
   </main>
