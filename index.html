@@ -1,44 +1,113 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>我的个人网站</title>
+  <title>This is all about me</title>
+  <meta name="description" content="Personal website of SmallSheep. Projects, about, and contact." />
+  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="container">
-    <h1>你好，我是XXX</h1>
-    <p>我做【领域/方向】。这里展示我的作品与联系方式。</p>
-    <a class="btn" href="#contact">联系我</a>
+  <header class="container header">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Go to top">This is all about me</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero" id="top">
+      <h1>This is all about me</h1>
+      <p class="subtitle">
+        A tiny corner of the internet where I share what I build, what I learn, and how to reach me.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </div>
   </header>
 
   <main class="container">
-    <section>
-      <h2>作品</h2>
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        Hi, I’m <strong>SmallSheep</strong>. I’m interested in building clean, practical things on the web.
+        I like simple design, readable code, and projects that actually ship.
+      </p>
+      <p class="muted">
+        Replace this text with your real bio. Keep it short, specific, and honest.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p class="muted">A few things I’ve worked on.</p>
+      </div>
+
       <ul class="cards">
         <li class="card">
-          <h3>项目 A</h3>
-          <p>一句话说明你做了什么，以及结果。</p>
-          <a href="https://github.com/你的仓库链接" target="_blank" rel="noreferrer">查看</a>
+          <h3>Project One</h3>
+          <p>
+            One sentence: what it is, what you built, and the outcome.
+          </p>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noreferrer">Live</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
         </li>
+
         <li class="card">
-          <h3>项目 B</h3>
-          <p>一句话说明你做了什么，以及结果。</p>
-          <a href="#" target="_blank" rel="noreferrer">查看</a>
+          <h3>Project Two</h3>
+          <p>
+            Keep it concrete. What problem did it solve? What tech did you use?
+          </p>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noreferrer">Live</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </li>
+
+        <li class="card">
+          <h3>Project Three</h3>
+          <p>
+            Add screenshots later if you want. Clarity beats decoration.
+          </p>
+          <div class="card-links">
+            <a href="#" target="_blank" rel="noreferrer">Live</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
         </li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>联系</h2>
-      <p>Email：<a href="mailto:you@example.com">you@example.com</a></p>
-      <p>GitHub：<a href="https://github.com/你的用户名" target="_blank" rel="noreferrer">@你的用户名</a></p>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:you@example.com">you@example.com</a>
+        <span class="muted">(change this to your email)</span>
+      </p>
+
+      <p>
+        GitHub:
+        <a href="https://github.com/SmallSheep993" target="_blank" rel="noreferrer">@SmallSheep993</a>
+      </p>
+
+      <p class="muted">
+        Optional: add LinkedIn / X / Instagram links here, but only if you actually want people to click them.
+      </p>
     </section>
   </main>
 
   <footer class="container footer">
-    <small>© <span id="year"></span> XXX</small>
+    <small>© <span id="year"></span> SmallSheep. All rights reserved.</small>
   </footer>
 
   <script src="script.js"></script>
