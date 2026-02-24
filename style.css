@@ -174,3 +174,10 @@ h3 {
     align-items: flex-start;
   }
 }
+
+.profile-pic {
+  width: 400px;
+  border-radius: 0%;
+  margin: 10px auto;
+  display: block;
+}
