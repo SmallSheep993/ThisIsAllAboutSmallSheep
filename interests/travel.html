@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel & Exploration | Alex Yang</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <header class="container header">
+    <nav class="nav">
+      <a class="brand" href="../things.html">← Back to Interests</a>
+      <div class="nav-links">
+        <a href="../projects.html">Projects</a>
+        <a href="../things.html">Things I Like</a>
+        <a href="../movies.html">Movie list</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Travel & Exploration</h1>
+      <p class="subtitle">Discovering new landscapes, embracing diverse cultures, and expanding my global perspective.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h2>A Global Mindset</h2>
+      <p>
+        Travel is the ultimate education. My time as the <span class="highlight">Vice President of the Multicultural Club</span> taught me the value of diversity, but traveling allowed me to experience it firsthand. I view every trip as an opportunity to step out of my comfort zone and understand the world through a different lens—a skill that is invaluable in the collaborative world of <strong>Software Engineering</strong>.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>How I Explore</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Cultural Immersion</h3>
+          <p class="muted">History • People • Traditions</p>
+          <p>I prefer local neighborhoods over tourist traps. I love learning about the historical context of a city and engaging with the people who live there.</p>
+        </article>
+
+        <article class="card">
+          <h3>Adventure & Nature</h3>
+          <p class="muted">Photography • Landscapes • Trails</p>
+          <p>From the rugged coastlines to mountain peaks, I always bring my camera to document the raw beauty of the natural world.</p>
+        </article>
+
+        <article class="card">
+          <h3>The Itinerary Logic</h3>
+          <p class="muted">Planning • Optimization • Discovery</p>
+          <p>I enjoy the "logistics" of travel—optimizing routes and schedules to maximize discovery while leaving room for spontaneous adventures.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Recent Expeditions</h2>
+      <p class="muted">Pinning memories across the globe.</p>
+      
+      <div style="background: var(--bg-soft); padding: 30px; border-radius: 16px; border: 1px solid var(--border); margin-top: 20px; text-align: center;">
+        <div style="font-size: 3rem; margin-bottom: 10px;">📍</div>
+        <h3>Where to Next?</h3>
+        <p style="max-width: 500px; margin: 0 auto;" class="muted">
+          I am currently planning my next journey. Whether it's a cross-country road trip or an international flight, the goal remains the same: to keep learning and keep exploring.
+        </p>
+        </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> SmallSheep</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hiking & Nature | Alex Yang</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* 针对 Hero 部分的移动端优化 */
+    @media (max-width: 768px) {
+      .hero-flex {
+        flex-direction: column-reverse; /* 手机端图片在上，文字在下 */
+        text-align: center;
+        gap: 20px !important;
+      }
+      .hero-image {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        max-width: 300px;
+      }
+      .trail-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 4px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container header">
+    <nav class="nav">
+      <a class="brand" href="../things.html">← Back to Things I Like</a>
+      <div class="nav-links">
+        <a href="../projects.html">Projects</a>
+        <a href="../things.html">Things I Like</a>
+        <a href="../movies.html">Movie list</a>
+      </div>
+    </nav>
+
+    <div class="hero hero-flex" style="display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 60px 0;">
+      <div style="flex: 1;">
+        <h1 style="margin: 0; font-size: 3rem; line-height: 1.2;">Hiking & Nature</h1>
+        <p class="subtitle" style="margin-top: 16px; max-width: 600px; font-size: 1.1rem; opacity: 0.8;">
+          A personal log of summits reached, trails conquered, and the adventures that lie ahead.
+        </p>
+      </div>
+
+      <div class="hero-image" style="flex: 0 0 320px;">
+        <img src="../assets/hiking/1.jpg" alt="Hiking Hero Image" 
+             style="width: 100%; height: 320px; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="section">
+      <h2 style="border-bottom: 2px solid var(--bg-soft); padding-bottom: 10px; margin-bottom: 24px;">Completed Trails</h2>
+      <div style="padding: 0;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Mount Tammany</strong>
+            <span class="muted">Delaware Water Gap, NJ</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Stairway to Heaven</strong>
+            <span class="muted">Vernon, NJ</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Breakneck Ridge</strong>
+            <span class="muted">Hudson Highlands, NY</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Palisades Interstate Park</strong>
+            <span class="muted">NJ / NY</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Sourland Mountain</strong>
+            <span class="muted">Hillsborough, NJ</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Rutgers Gardens</strong>
+            <span class="muted">New Brunswick, NJ</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Hemlock Falls</strong>
+            <span class="muted">South Mountain Reservation, NJ</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>High Point State Park</strong>
+            <span class="muted">Sussex, NJ</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Bushkill Falls</strong>
+            <span class="muted">Lehman Township, PA</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Whirlpool State Park</strong>
+            <span class="muted">Niagara Falls, NY</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Kaaterskill Falls</strong>
+            <span class="muted">Hunter, NY</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Mohonk Preserve</strong>
+            <span class="muted">New Paltz, NY</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Mount Lafayette & Tuckerman Ravine</strong>
+            <span class="muted">White Mountains, NH</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--bg-soft);">
+            <strong>Arethusa Falls</strong>
+            <span class="muted">Crawford Notch, NH</span>
+          </li>
+          <li class="trail-item" style="padding: 12px 0; display: flex; justify-content: space-between; align-items: center;">
+            <strong>Quail Trailhead</strong>
+            <span class="muted">New Jersey</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 style="margin-bottom: 24px;">Gallery</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        
+        <div class="gallery-item" style="overflow: hidden; border-radius: 16px; aspect-ratio: 4/3; background: var(--bg-soft); border: 1px solid var(--border); transition: transform 0.3s ease;">
+           <img src="../assets/hiking/7.jpg" alt="Hiking memory 1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div class="gallery-item" style="overflow: hidden; border-radius: 16px; aspect-ratio: 4/3; background: var(--bg-soft); border: 1px solid var(--border); transition: transform 0.3s ease;">
+           <img src="../assets/hiking/2.jpg" alt="Hiking memory 2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div class="gallery-item" style="overflow: hidden; border-radius: 16px; aspect-ratio: 4/3; background: var(--bg-soft); border: 1px solid var(--border); transition: transform 0.3s ease;">
+           <img src="../assets/hiking/3.jpg" alt="Hiking memory 3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div class="gallery-item" style="overflow: hidden; border-radius: 16px; aspect-ratio: 4/3; background: var(--bg-soft); border: 1px solid var(--border); transition: transform 0.3s ease;">
+           <img src="../assets/hiking/4.jpg" alt="Hiking memory 4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div class="gallery-item" style="overflow: hidden; border-radius: 16px; aspect-ratio: 4/3; background: var(--bg-soft); border: 1px solid var(--border); transition: transform 0.3s ease;">
+           <img src="../assets/hiking/5.jpg" alt="Hiking memory 5" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div class="gallery-item" style="overflow: hidden; border-radius: 16px; aspect-ratio: 4/3; background: var(--bg-soft); border: 1px solid var(--border); transition: transform 0.3s ease;">
+           <img src="../assets/hiking/6.jpg" alt="Hiking memory 6" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container footer" style="margin-top: 80px; padding-bottom: 40px; text-align: center; opacity: 0.6;">
+    <small>© <span id="year"></span> SmallSheep · Alex Yang</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Movie list | This is all about me</title>
+  <title>Movie List | Alex Yang</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header class="container header">
     <nav class="nav">
-      <a class="brand" href="index.html">This is all about me</a>
+      <a class="brand" href="index.html">← Home</a>
+      
       <div class="nav-links">
         <a href="projects.html">Projects</a>
         <a href="things.html">Things I Like</a>
@@ -19,17 +20,78 @@
     </nav>
 
     <div class="hero">
-      <h1>Movie list</h1>
+      <h1>Movie List</h1>
+      <p class="subtitle">A collection of films that moved me and those I plan to experience soon.</p>
     </div>
   </header>
 
   <main class="container">
     <section class="section">
-      <ol>
-        <li>Movie Title (Year)</li>
-        <li>Movie Title (Year)</li>
-        <li>Movie Title (Year)</li>
-      </ol>
+      <h2>My Favorites</h2>
+      <div class="movie-grid-container">
+        
+        <article class="movie-card">
+          <img src="assets/images/godfather1.jpg" alt="The Godfather Poster" class="movie-poster">
+          <div class="movie-content">
+            <h3>The Godfather (1972)</h3>
+            <p class="muted">Director: Francis Ford Coppola</p>
+            <p>An epic masterpiece of the Corleone family. It's not just a crime film; it's a profound story about family, loyalty, and the nature of power.</p>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="assets/images/godfather2.jpg" alt="The Godfather Part II Poster" class="movie-poster">
+          <div class="movie-content">
+            <h3>The Godfather Part II (1974)</h3>
+            <p class="muted">Director: Francis Ford Coppola</p>
+            <p>A rare sequel that stands as high as the original, charting the parallel lives of Vito and Michael Corleone across different eras.</p>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="assets/images/godfather3.jpg" alt="The Godfather Part III Poster" class="movie-poster">
+          <div class="movie-content">
+            <h3>The Godfather Part III (1990)</h3>
+            <p class="muted">Director: Francis Ford Coppola</p>
+            <p>The final chapter of Michael Corleone's journey as he seeks to legitimize his empire and find redemption for his past sins.</p>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="assets/images/titanic.jpg" alt="Titanic Poster" class="movie-poster">
+          <div class="movie-content">
+            <h3>Titanic (1997)</h3>
+            <p class="muted">Director: James Cameron</p>
+            <p>A grand, tragic romance set against the ill-fated maiden voyage of the R.M.S. Titanic. A spectacle of cinema and emotion.</p>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="assets/images/leon.jpg" alt="Léon Poster" class="movie-poster">
+          <div class="movie-content">
+            <h3>Léon: The Professional (1994)</h3>
+            <p class="muted">Director: Luc Besson</p>
+            <p>An unlikely bond between a professional assassin and a young girl. A powerful, stylistic story of protection and sacrifice.</p>
+          </div>
+        </article>
+
+        <article class="movie-card">
+          <img src="assets/images/shawshank.jpg" alt="The Shawshank Redemption Poster" class="movie-poster">
+          <div class="movie-content">
+            <h3>The Shawshank Redemption (1994)</h3>
+            <p class="muted">Director: Frank Darabont</p>
+            <p>A profound story of hope and friendship that transcends the walls of a prison. "Fear can hold you prisoner, hope can set you free."</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Watchlist</h2>
+      <div class="movie-grid-container">
+        <p class="muted">Currently searching for my next cinematic experience. More classics and new releases to be added soon.</p>
+      </div>
     </section>
   </main>
 
