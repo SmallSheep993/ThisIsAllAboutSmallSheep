@@ -5,12 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rock Climbing | Alex Yang</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Custom styles for the Climbing Page */
+    .climbing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .climbing-item {
+      overflow: hidden;
+      border-radius: 20px;
+      aspect-ratio: 1 / 1.2; 
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      transition: transform 0.3s ease;
+    }
+
+    .climbing-item:hover {
+      transform: scale(1.02);
+    }
+
+    .climbing-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .climbing-grid {
+        grid-template-columns: 1fr; /* On mobile, 1 column is better for 1:1.2 images */
+        gap: 5px;
+      }
+      .climbing-item {
+        border-radius: 12px;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <header class="container header">
     <nav class="nav">
-      <a class="brand" href="../things.html">← Back to Interests</a>
+      <a class="brand" href="../things.html">← Back to Things I Like</a>
       <div class="nav-links">
         <a href="../projects.html">Projects</a>
         <a href="../things.html">Things I Like</a>
@@ -18,64 +57,51 @@
       </div>
     </nav>
 
-    <div class="hero">
+    <div class="hero" style="padding: 60px 0 20px;">
       <h1>Rock Climbing</h1>
-      <p class="subtitle">Approaching vertical challenges with an analytical mind and physical precision.</p>
+      <p class="subtitle" style="margin-top: 16px;">
+        Bouldering, indoor rock climbing, outdoor climbing.
+      </p>
     </div>
   </header>
 
   <main class="container">
+    
     <section class="section">
-      <h2>Vertical Problem Solving</h2>
-      <p>
-        In the climbing community, we don't just call routes "paths"—we call them <strong>"problems."</strong> Whether I am bouldering or top-roping, climbing is a full-body engagement that requires high levels of <span class="highlight">focus, spatial awareness, and strategic planning</span>. It is the perfect counterweight to my academic studies at Rutgers, demanding the same logical breakdown of a challenge before execution.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>My Climbing Focus</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Bouldering</h3>
-          <p class="muted">Power • Technique • Short Routes</p>
-          <p>I enjoy the intensity of bouldering, where every move counts. It's about finding the most efficient "beta" (solution) to navigate a difficult sequence of holds.</p>
-        </article>
-
-        <article class="card">
-          <h3>Top Roping</h3>
-          <p class="muted">Endurance • Height • Safety</p>
-          <p>For longer routes, I focus on steady breathing and efficient movement to manage energy levels over 40–50 foot climbs.</p>
-        </article>
-
-        <article class="card">
-          <h3>The "Beta" Mindset</h3>
-          <p class="muted">Analysis • Execution • Iteration</p>
-          <p>Just like code, if a move doesn't work, I "debug" my body position. I adjust my center of gravity or foot placement until the problem is solved.</p>
-        </article>
+      <h2>My Climbing Story</h2>
+      <div style="max-width: 800px; line-height: 1.8;">
+        <p>
+          I would definitely not call myself an elite climber by any means lol, but climbing has become a part of my life. Most of my time is spent in the indoor gym, where the controlled environment allows me to focus purely on technique and strength. While I have only ventured into outdoor climbing once, that single experience gave me a profound respect for the raw nature of the sport.
+        </p>
+        <p style="margin-top: 1.5rem;">
+          Currently, I am working through <strong>V5 problems</strong>. For me, V5 represents that sweet spot where brute strength isn't enough—you need to start "reading" the wall and optimizing your body positioning. It’s a physical puzzle that demands both persistence and a calm mind. 
+        </p>
+        <p style="margin-top: 1.5rem;">
+          Looking ahead, I hope to continue this journey, deepening my passion for the sport. My goal is simple: to keep showing up, keep learning, and eventually become truly <em>good at it</em>.
+        </p>
       </div>
     </section>
 
     <section class="section">
-      <h2>Inside the Gym</h2>
-      <p class="muted">The intersection of strength and strategy.</p>
+      <h2>Gallery</h2>
+      <p class="muted">Visual log of my progress and favorite sessions.</p>
       
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
-        <div style="background: var(--bg-soft); aspect-ratio: 3/4; border-radius: 16px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px;">
-          <p class="muted">[Photo: Sending a V4/V5 Project]</p>
-        </div>
-        <div style="background: var(--bg-soft); aspect-ratio: 3/4; border-radius: 16px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px;">
-          <p class="muted">[Photo: Chalk Bags & Climbing Shoes]</p>
-        </div>
+      <div class="climbing-grid">
+        <div class="climbing-item"><img src="../assets/climbing/1.jpg" alt="Climbing Log 1"></div>
+        <div class="climbing-item"><img src="../assets/climbing/2.jpg" alt="Climbing Log 2"></div>
+        <div class="climbing-item"><img src="../assets/climbing/3.jpg" alt="Climbing Log 3"></div>
+        <div class="climbing-item"><img src="../assets/climbing/4.jpg" alt="Climbing Log 4"></div>
+        <div class="climbing-item"><img src="../assets/climbing/5.jpg" alt="Climbing Log 5"></div>
+        <div class="climbing-item"><img src="../assets/climbing/6.jpg" alt="Climbing Log 6"></div>
       </div>
     </section>
+
   </main>
 
   <footer class="container footer">
     <small>© <span id="year"></span> SmallSheep</small>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="../script.js"></script>
 </body>
 </html>
