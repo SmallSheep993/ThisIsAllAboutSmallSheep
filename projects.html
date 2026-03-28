@@ -1,106 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Alex Yang</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#f6f7fb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css" />
 </head>
-
 <body>
-  <header class="container header">
-    <nav class="nav">
-      <a class="brand" href="index.html">← Home</a>
-      <div class="nav-links">
-        <a href="projects.html">Projects</a>
-        <a href="things.html">Things I Like</a>
-        <a href="movies.html">Movie list</a>
-      </div>
-    </nav>
 
-    <div class="hero">
-      <h1>Technical Projects</h1>
-      <p class="subtitle">
-        A showcase of my work in software development and data analysis, ranging from algorithmic challenges to full-scale applications.
-      </p>
-    </div>
+<div class="amb a1"></div>
+<div class="amb a2"></div>
+
+<nav>
+  <div class="wrap ni">
+    <a class="nl" href="index.html"><div class="nd"></div>SmallSheep</a>
+    <ul class="nlinks">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="things.html">Things I Like</a></li>
+      <li><a href="movies.html">Movie list</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:alexxyang993@gmail.com" class="nbtn">Email Me</a>
+  </div>
+</nav>
+
+<div class="page-main">
+  <header class="wrap sub-hero">
+    <div class="ey">Portfolio</div>
+    <h1 class="ph-title">Technical Projects</h1>
+    <p class="ph-sub">A showcase of my work in software development and data analysis, from algorithmic challenges to full-scale applications.</p>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <ul class="cards">
-        
-        <li class="card">
-          <h3>NJ Redistricting & Gerrymandering</h3>
-          <p class="muted">Python • Data Analysis • Mapping</p>
-          <p>An in-depth analysis of New Jersey's Congressional maps. I explored the mathematical and geographical impacts of redistricting to identify potential gerrymandering patterns.</p>
-          <div class="card-links">
-            <a href="https://github.com/SmallSheep993/Redistricting-and-Gerrymandering-NJ-Congressional-map-" target="_blank">View Code</a>
-          </div>
-        </li>
-
-        <li class="card">
-          <h3>Student Dorm Room Assignment</h3>
-          <p class="muted">Java • Algorithms • Data Structures</p>
-          <p>An algorithmic solution for optimizing student housing. This project focuses on efficient resource allocation and constraint satisfaction based on student preferences.</p>
-          <div class="card-links">
-            <a href="https://github.com/SmallSheep993/Assigning-Student-Dorm-Rooms-" target="_blank">View Code</a>
-          </div>
-        </li>
-
-        <li class="card">
-          <h3>Photos Management System</h3>
-          <p class="muted">JavaFX • OOP • MVC • File I/O</p>
-          <p>Developed a JavaFX-based photo management tool featuring album creation, photo tagging, and search. Applied modular MVC architecture and persistent file storage.</p>
-          <div class="card-links">
-            <a href="https://github.com/SmallSheep993" target="_blank">View Code</a>
-          </div>
-        </li>
-
-        <li class="card">
-          <h3>Interactive Chess Game</h3>
-          <p class="muted">Java • GUI • Game Logic</p>
-          <p>A fully interactive Chess game with a graphical user interface. Features a modular architecture separating UI components, game logic, and rule enforcement.</p>
-          <div class="card-links">
-            <a href="https://github.com/SmallSheep993" target="_blank">View Code</a>
-          </div>
-        </li>
-
-        <li class="card">
-          <h3>GYM Fitness Tracker</h3>
-          <p class="muted">Java • Data Persistence • Analytics</p>
-          <p>Built a fitness tracking platform supporting workout management and health metrics logging. Includes BMI calculators and personalized progress analytics.</p>
-          <div class="card-links">
-            <a href="https://github.com/SmallSheep993" target="_blank">View Code</a>
-          </div>
-        </li>
-
-        <li class="card">
-          <h3>Personal Portfolio</h3>
-          <p class="muted">HTML • CSS • JavaScript</p>
-          <p>My digital corner of the internet. Designed to host my professional resume, technical projects, and cinematic interests with a clean aesthetic.</p>
-          <div class="card-links">
-            <a href="https://github.com/SmallSheep993/ThisIsAllAboutSmallSheep" target="_blank">View Code</a>
-          </div>
-        </li>
-
-        <li class="card">
-          <h3>More Projects Incoming</h3>
-          <p class="muted">Ongoing • Learning • Innovation</p>
-          <p>I am constantly exploring new technologies and building new tools. Stay tuned for upcoming projects in Machine Learning and Web Development.</p>
-          <div class="card-links">
-            <a href="https://github.com/SmallSheep993" target="_blank">Follow My GitHub</a>
-          </div>
-        </li>
-
-      </ul>
-    </section>
+  <main class="wrap main-block">
+    <ul class="card-grid">
+      <li class="card-item">
+        <h3>NJ Redistricting &amp; Gerrymandering</h3>
+        <span class="meta">Python • Data Analysis • Mapping</span>
+        <p>An in-depth analysis of New Jersey's Congressional maps. I explored the mathematical and geographical impacts of redistricting to identify potential gerrymandering patterns.</p>
+        <div class="card-actions"><a href="https://github.com/SmallSheep993/Redistricting-and-Gerrymandering-NJ-Congressional-map-" class="detail-link" target="_blank" rel="noopener noreferrer">View code →</a></div>
+      </li>
+      <li class="card-item">
+        <h3>Student Dorm Room Assignment</h3>
+        <span class="meta">Java • Algorithms • Data Structures</span>
+        <p>An algorithmic solution for optimizing student housing: efficient resource allocation and constraint satisfaction based on student preferences.</p>
+        <div class="card-actions"><a href="https://github.com/SmallSheep993/Assigning-Student-Dorm-Rooms-" class="detail-link" target="_blank" rel="noopener noreferrer">View code →</a></div>
+      </li>
+      <li class="card-item">
+        <h3>Photos Management System</h3>
+        <span class="meta">JavaFX • OOP • MVC • File I/O</span>
+        <p>A JavaFX photo management tool with album creation, tagging, and search. Modular MVC and persistent file storage.</p>
+        <div class="card-actions"><a href="https://github.com/SmallSheep993" class="detail-link" target="_blank" rel="noopener noreferrer">View code →</a></div>
+      </li>
+      <li class="card-item">
+        <h3>Interactive Chess Game</h3>
+        <span class="meta">Java • GUI • Game Logic</span>
+        <p>Fully interactive chess with a GUI. Modular architecture separating UI, game logic, and rule enforcement.</p>
+        <div class="card-actions"><a href="https://github.com/SmallSheep993" class="detail-link" target="_blank" rel="noopener noreferrer">View code →</a></div>
+      </li>
+      <li class="card-item">
+        <h3>GYM Fitness Tracker</h3>
+        <span class="meta">Java • Data Persistence • Analytics</span>
+        <p>Workout management and health metrics logging, with BMI tools and progress analytics.</p>
+        <div class="card-actions"><a href="https://github.com/SmallSheep993" class="detail-link" target="_blank" rel="noopener noreferrer">View code →</a></div>
+      </li>
+      <li class="card-item">
+        <h3>Personal Portfolio</h3>
+        <span class="meta">HTML • CSS • JavaScript</span>
+        <p>This site — projects, interests, and a bit of personality.</p>
+        <div class="card-actions"><a href="https://github.com/SmallSheep993/ThisIsAllAboutSmallSheep" class="detail-link" target="_blank" rel="noopener noreferrer">View code →</a></div>
+      </li>
+      <li class="card-item">
+        <h3>More projects incoming</h3>
+        <span class="meta">Ongoing • Learning • Innovation</span>
+        <p>Exploring new technologies — more ML and web work on the way.</p>
+        <div class="card-actions"><a href="https://github.com/SmallSheep993" class="detail-link" target="_blank" rel="noopener noreferrer">Follow GitHub →</a></div>
+      </li>
+    </ul>
   </main>
+</div>
 
-  <footer class="container footer">
-    <small>© <span id="year"></span> SmallSheep</small>
-  </footer>
-
-  <script src="script.js"></script>
+<footer class="site-footer">
+  <div class="wrap fi">
+    <p>© <span id="year"></span> Alex Yang · SmallSheep</p>
+    <p><a href="index.html">Home</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

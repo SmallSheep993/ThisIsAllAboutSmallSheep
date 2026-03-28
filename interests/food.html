@@ -1,111 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Food & Culinary Adventures | Alex Yang</title>
-  <link rel="stylesheet" href="../style.css" />
-  <style>
-    /* Custom styles for the Food Page */
-    .food-grid {
-      display: grid;
-      /* Using a slightly smaller min-width (300px) to allow for 3 columns on wider screens */
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-      gap: 15px;
-      margin-top: 30px;
-    }
-
-    .section {
-      padding: 15px 0 !important;
-    }
-
-    .food-item {
-      overflow: hidden;
-      border-radius: 12px;
-      aspect-ratio: 1 / 1.2; 
-      background: var(--bg-soft);
-      border: 1px solid var(--border);
-      transition: transform 0.3s ease;
-    }
-
-    .food-item:hover {
-      transform: scale(1.02);
-    }
-
-    .food-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
-      display: block;
-    }
-
-    @media (max-width: 600px) {
-      .food-grid {
-        grid-template-columns: 1fr 1fr; /* 2 columns on mobile for food looks better */
-        gap: 8px;
-      }
-    }
-  </style>
+  <title>Food &amp; Culinary | Alex Yang</title>
+  <meta name="theme-color" content="#f6f7fb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../site.css" />
 </head>
-
 <body>
-  <header class="container header">
-    <nav class="nav">
-      <a class="brand" href="../things.html">← Back to Things I Like</a>
-      <div class="nav-links">
-        <a href="../projects.html">Projects</a>
-        <a href="../things.html">Things I Like</a>
-        <a href="../movies.html">Movie list</a>
-      </div>
-    </nav>
 
+<div class="amb a1"></div>
+<div class="amb a2"></div>
 
+<nav>
+  <div class="wrap ni">
+    <a class="nl" href="../index.html"><div class="nd"></div>SmallSheep</a>
+    <ul class="nlinks">
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../things.html">Things I Like</a></li>
+      <li><a href="../movies.html">Movie list</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:alexxyang993@gmail.com" class="nbtn">Email Me</a>
+  </div>
+</nav>
+
+<div class="page-main">
+  <header class="wrap sub-hero">
+    <p class="breadcrumb"><a href="../things.html">← Things I Like</a></p>
+    <div class="ey">Food</div>
+    <h1 class="ph-title">The joy of eating</h1>
+    <p class="ph-sub">My camera roll is basically meals I've loved.</p>
   </header>
 
-  <main class="container">
-    
-<section class="section">
-      <h2>The Joy of Eating</h2>
-      <div style="max-width: 800px; line-height: 1.8;">
-        <p>
-          If you asked me what takes up most of the space in my phone’s gallery, I wouldn’t even need to think about it — <strong>it’s food.</strong> My camera roll is basically a collection of meals I’ve loved.
-        </p>
-        <p style="margin-top: 1.5rem;">
-          I just really love food. It’s one of those simple joys in life that never gets old. I enjoy trying different cuisines, playing around with cooking styles, and discovering new flavors. <strong>My dream is to taste the cuisine of every country in the world.</strong>
-        </p>
-        <p style="margin-top: 1.5rem;">
-          But no matter how much I explore, <strong>Chinese food will always feel like home to me.</strong> It’s the taste I grew up with, the flavors that feel familiar and comforting. Nothing quite beats that.
-        </p>
+  <main class="wrap main-block">
+    <section class="section-block">
+      <div class="prose">
+        <p>If you asked what takes up most of my phone gallery — <strong>it's food.</strong></p>
+        <p>I love trying cuisines, cooking styles, and new flavors. <strong>Dream: taste something from every country.</strong> <strong>Chinese food will always feel like home.</strong></p>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Culinary Gallery</h2>
-      <p class="muted">A collection of memorable meals and tastes.</p>
-      
+    <section class="section-block">
+      <h2 class="section-title">Culinary gallery</h2>
+      <p class="ph-sub" style="margin-bottom:16px">Memorable meals and tastes.</p>
       <div class="food-grid">
-        <div class="food-item"><img src="../assets/food/1.jpg" alt="Food 1"></div>
-        <div class="food-item"><img src="../assets/food/2.jpg" alt="Food 2"></div>
-        <div class="food-item"><img src="../assets/food/3.jpg" alt="Food 3"></div>
-        <div class="food-item"><img src="../assets/food/4.jpg" alt="Food 4"></div>
-        <div class="food-item"><img src="../assets/food/5.jpg" alt="Food 5"></div>
-        <div class="food-item"><img src="../assets/food/6.jpg" alt="Food 6"></div>
-        <div class="food-item"><img src="../assets/food/7.jpg" alt="Food 7"></div>
-        <div class="food-item"><img src="../assets/food/8.jpg" alt="Food 8"></div>
-        <div class="food-item"><img src="../assets/food/9.jpg" alt="Food 9"></div>
-        <div class="food-item"><img src="../assets/food/10.jpg" alt="Food 10"></div>
-        <div class="food-item"><img src="../assets/food/11.jpg" alt="Food 11"></div>
-        <div class="food-item"><img src="../assets/food/12.jpg" alt="Food 12"></div>
-        <div class="food-item"><img src="../assets/food/13.jpg" alt="Food 13"></div>
+        <div class="food-item"><img src="../assets/food/1.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/2.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/3.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/4.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/5.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/6.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/7.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/8.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/9.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/10.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/11.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/12.jpg" alt="Food" /></div>
+        <div class="food-item"><img src="../assets/food/13.jpg" alt="Food" /></div>
       </div>
     </section>
-
   </main>
+</div>
 
-  <footer class="container footer">
-    <small>© <span id="year"></span> SmallSheep</small>
-  </footer>
-
-  <script src="../script.js"></script>
+<footer class="site-footer">
+  <div class="wrap fi">
+    <p>© <span id="year"></span> Alex Yang · SmallSheep</p>
+    <p><a href="../things.html">Things I Like</a></p>
+  </div>
+</footer>
+<script src="../script.js"></script>
 </body>
 </html>

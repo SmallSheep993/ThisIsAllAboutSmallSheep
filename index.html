@@ -1,114 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alex Yang | CS Student</title>
-  <meta name="description" content="Rutgers CS student. Projects, interests, and contact." />
-  <meta name="theme-color" content="#111111" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Alex Yang — Computer Science @ Rutgers</title>
+  <meta name="description" content="Rutgers CS student. Projects in Python, Java, and data. Interests, movies, and contact." />
+  <meta name="theme-color" content="#f6f7fb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css" />
 </head>
-
 <body>
-  <header class="container header">
-    <nav class="nav">
-      <a class="brand" href="index.html">This is all about me</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="things.html">Things I Like</a>
-        <a href="movies.html">Movie list</a>
-        <a href="#contact">Contact</a>
+
+<div class="amb a1"></div>
+<div class="amb a2"></div>
+
+<nav>
+  <div class="wrap ni">
+    <a class="nl" href="index.html"><div class="nd"></div>SmallSheep</a>
+    <ul class="nlinks">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="things.html">Things I Like</a></li>
+      <li><a href="movies.html">Movie list</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:alexxyang993@gmail.com" class="nbtn">Email Me</a>
+  </div>
+</nav>
+
+<section id="home">
+  <div class="wrap">
+    <div class="hg">
+      <div>
+        <div class="hbadge"><div class="bdot"></div>Rutgers · Computer Science</div>
+        <h1 class="hn">Alex<br>Yang</h1>
+        <div class="hr">// Student &amp; builder</div>
+        <p class="hd">Hi! I'm <strong>SmallSheep</strong> — a Computer Science student at <strong>Rutgers University</strong>. I share what I build and what I enjoy: algorithms, data projects, and a few corners of the web. <strong>Small improvements, repeated over time.</strong></p>
+        <div class="hbtns">
+          <a href="projects.html" class="btn br">View Projects</a>
+          <a href="things.html" class="btn bg">Things I Like</a>
+        </div>
       </div>
-    </nav>
-    
-
-    <div class="hero">
-      <h1>Hi, I'm Alex</h1>
-      <p class="subtitle">
-        A small corner of the world where I share what I build and what I enjoy.
-      </p>
-     <img src="assets/images/profile.jpg"
-     alt="Photo of Alex"
-     class="profile-pic">
-     
+      <div class="cc">
+        <div class="ctb"><div class="dot dr"></div><div class="dot dy"></div><div class="dot dg"></div><span class="cf">profile.ts</span></div>
+        <div class="cbody">
+          <div><span class="ln">1</span><span class="kw">const</span> <span class="nm">dev</span> = {</div>
+          <div><span class="ln">2</span>  <span class="fn">name</span>: <span class="str">"Alex Yang"</span>,</div>
+          <div><span class="ln">3</span>  <span class="fn">handle</span>: <span class="str">"SmallSheep"</span>,</div>
+          <div><span class="ln">4</span>  <span class="fn">school</span>: <span class="str">"Rutgers University"</span>,</div>
+          <div><span class="ln">5</span>  <span class="fn">stack</span>: [</div>
+          <div><span class="ln">6</span>    <span class="str">"Python"</span>, <span class="str">"Java"</span>,</div>
+          <div><span class="ln">7</span>    <span class="str">"JavaFX"</span>, <span class="str">"HTML/CSS"</span>,</div>
+          <div><span class="ln">8</span>  ],</div>
+          <div><span class="ln">9</span>  <span class="fn">focus</span>: <span class="str">"Software &amp; data"</span>,</div>
+          <div><span class="ln">10</span> <span class="cm">// algorithms · mapping · apps</span></div>
+          <div><span class="ln">11</span> <span class="fn">status</span>: <span class="hl">"building"</span></div>
+          <div><span class="ln">12</span>};</div>
+          <div><span class="ln">13</span>&nbsp;</div>
+          <div><span class="ln">14</span><span class="cm">// portfolio + curiosity ↗</span> <span class="cur"></span></div>
+        </div>
+      </div>
     </div>
-  </header>
-
-  <main class="container">
-
-    <!-- About Section -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-
-  <p>
-    Hi there! I’m <strong>SmallSheep</strong> AKA Alex. I’m currently a Computer Science student at Rutgers University.
-  </p>
-
-  <p>
-    You can find my projects and interests in the links above.
-  </p>
-
-  <p>
-    I try to approach learning with discipline and curiosity. 
-    Small improvements, repeated over time.
-  </p>
+  </div>
 </section>
 
 
-
-    <!-- Now Section -->
-    <section id="plan" class="section">
-      <h2>My current plan</h2>
-      <ul style="margin: 0; padding-left: 1.25rem;">
-        <li>Earn my Bachelor of Science in Computer Science and attend a great graduation ceremony.</li>
-        <li>Do well in all my classes and keep a strong GPA.</li>
+<section id="plan">
+  <div class="wrap">
+    <div class="ey">Now</div>
+    <h2 class="st rv">Current plans</h2>
+    <div class="rv" style="max-width:640px">
+      <ul class="plan-list">
+        <li>Earn my <strong>Bachelor of Science in Computer Science</strong> and enjoy graduation.</li>
+        <li>Do well in classes and keep a strong GPA.</li>
         <li>Travel and go hiking more.</li>
-        <li>Finding a job in the tech industry.</li>
-        <li>I'll keep adding projects and notes here.</li>
+        <li>Find a role in the <strong>tech industry</strong>.</li>
+        <li>Keep updating this site with projects and notes.</li>
       </ul>
-    </section>
-
-    <!-- Contact Section -->
-<section id="contact" class="section">
-  <h2>Contact</h2>
-
-  <p>
-    Email:
-    <a href="mailto:alexxyang993@gmail.com">
-      alexxyang993@gmail.com
-    </a>
-  </p>
-
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/alexxyang/"
-       target="_blank"
-       rel="noopener noreferrer">
-      linkedin.com/in/alexxyang
-    </a>
-  </p>
-
-  <p>
-    GitHub:
-    <a href="https://github.com/SmallSheep993"
-       target="_blank"
-       rel="noopener noreferrer">
-      github.com/SmallSheep993
-    </a>
-  </p>
-
-  <p class="muted">
-    Feel free to reach out.
-  </p>
+    </div>
+  </div>
 </section>
 
-  </main>
 
-  <footer class="container footer">
-    <small>© <span id="year"></span> SmallSheep</small>
-  </footer>
 
-  <script src="script.js"></script>
+<section id="contact">
+  <div class="wrap">
+    <div class="cbox rv">
+      <div class="ey" style="justify-content:center;margin-bottom:16px">Contact</div>
+      <img src="assets/images/profile.jpg" alt="Photo of Alex Yang" class="contact-avatar" width="140" height="140" loading="lazy" />
+      <div class="ct">Let's connect</div>
+      <p class="cs">Open to opportunities in tech. Reach out by email or find me on GitHub and LinkedIn.</p>
+      <div class="cls">
+        <a href="mailto:alexxyang993@gmail.com" class="cl">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          alexxyang993@gmail.com
+        </a>
+        <a href="https://github.com/SmallSheep993" target="_blank" rel="noopener noreferrer" class="cl">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+          SmallSheep993
+        </a>
+        <a href="https://www.linkedin.com/in/alexxyang/" target="_blank" rel="noopener noreferrer" class="cl">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM9 17H6.5v-7H9v7zM7.75 8.73a1.38 1.38 0 1 1 0-2.76 1.38 1.38 0 0 1 0 2.76zM18 17h-2.5v-3.85c0-1.07-.02-2.44-1.49-2.44-1.49 0-1.72 1.16-1.72 2.36V17H9.8v-7h2.4v.96h.03c.33-.63 1.15-1.3 2.36-1.3 2.53 0 3 1.66 3 3.82V17z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <a href="mailto:alexxyang993@gmail.com" class="btn br" style="margin:0 auto">Send email</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap fi">
+    <p>© <span id="year"></span> Alex Yang · SmallSheep</p>
+    <p><a href="projects.html">Full project list</a> · Rutgers CS</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+(function(){
+  const io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.rv').forEach(function(el) { io.observe(el); });
+})();
+</script>
 </body>
 </html>

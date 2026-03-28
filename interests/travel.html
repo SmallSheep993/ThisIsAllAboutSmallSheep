@@ -1,41 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Travel & Exploration | Alex Yang</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>Travel &amp; Exploration | Alex Yang</title>
+  <meta name="theme-color" content="#f6f7fb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../site.css" />
 </head>
-
 <body>
-  <header class="container header">
-    <nav class="nav">
-      <a class="brand" href="../things.html">← Back to Interests</a>
-      <div class="nav-links">
-        <a href="../projects.html">Projects</a>
-        <a href="../things.html">Things I Like</a>
-        <a href="../movies.html">Movie list</a>
-      </div>
-    </nav>
 
-    <div class="hero">
-      <h1>Still working on this page....  Please refresh it lol</h1>
-        
-    </div>
+<div class="amb a1"></div>
+<div class="amb a2"></div>
+
+<nav>
+  <div class="wrap ni">
+    <a class="nl" href="../index.html"><div class="nd"></div>SmallSheep</a>
+    <ul class="nlinks">
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../things.html">Things I Like</a></li>
+      <li><a href="../movies.html">Movie list</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:alexxyang993@gmail.com" class="nbtn">Email Me</a>
+  </div>
+</nav>
+
+<div class="page-main">
+  <header class="wrap sub-hero">
+    <p class="breadcrumb"><a href="../things.html">← Things I Like</a></p>
+    <div class="ey">Travel</div>
+    <h1 class="ph-title">Travel &amp; exploration</h1>
+    <p class="ph-sub">New landscapes and traditions — this page is under construction.</p>
   </header>
 
-
-
-
-
+  <main class="wrap main-block">
+    <section class="section-block">
+      <div class="prose">
+        <p>I'm collecting stories and photos from trips. Check back soon for updates.</p>
+      </div>
+    </section>
   </main>
+</div>
 
-  <footer class="container footer">
-    <small>© <span id="year"></span> SmallSheep</small>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<footer class="site-footer">
+  <div class="wrap fi">
+    <p>© <span id="year"></span> Alex Yang · SmallSheep</p>
+    <p><a href="../things.html">Things I Like</a></p>
+  </div>
+</footer>
+<script src="../script.js"></script>
 </body>
 </html>

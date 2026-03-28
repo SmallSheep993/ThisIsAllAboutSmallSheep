@@ -1,81 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Interests | Alex Yang</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Things I Like | Alex Yang</title>
+  <meta name="theme-color" content="#f6f7fb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css" />
 </head>
-
 <body>
-  <header class="container header">
-    <nav class="nav">
-      <a class="brand" href="index.html">← Home</a>
-      <div class="nav-links">
-        <a href="projects.html">Projects</a>
-        <a href="things.html">Things I Like</a>
-        <a href="movies.html">Movie list</a>
-      </div>
-    </nav>
 
-    <div class="hero">
-      <h1>Just some dumb things I like to do in my life</h1>
-      <p class="subtitle">Something besides than coding</p>
-    </div>
+<div class="amb a1"></div>
+<div class="amb a2"></div>
+
+<nav>
+  <div class="wrap ni">
+    <a class="nl" href="index.html"><div class="nd"></div>SmallSheep</a>
+    <ul class="nlinks">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="things.html">Things I Like</a></li>
+      <li><a href="movies.html">Movie list</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:alexxyang993@gmail.com" class="nbtn">Email Me</a>
+  </div>
+</nav>
+
+<div class="page-main">
+  <header class="wrap sub-hero">
+    <div class="ey">Life</div>
+    <h1 class="ph-title">Things I like</h1>
+    <p class="ph-sub">Something besides coding — trails, training, travel, and good food.</p>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <div class="cards">
-        
-        <article class="card">
-          <h3>Hiking & Nature</h3>
-          <p>Finding balance and clarity through the scenic trails of the Tri-state area.</p>
-          <div style="margin-top: 15px;">
-            <a href="interests/hiking.html" class="detail-btn">Read More →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Gym</h3>
-          <p>Applying a systematic, data-driven approach to physical training and health.</p>
-          <div style="margin-top: 15px;">
-            <a href="interests/fitness.html" class="detail-btn">Read More →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Rock Climbing</h3>
-          <p>Engaging in vertical puzzle-solving that challenges both mind and body.</p>
-          <div style="margin-top: 15px;">
-            <a href="interests/climbing.html" class="detail-btn">Read More →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Travel & Exploration</h3>
-          <p>Expanding my global mindset by discovering new landscapes and traditions.</p>
-          <div style="margin-top: 15px;">
-            <a href="interests/travel.html" class="detail-btn">Read More →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3>Foodie</h3>
-          <p>Experiencing culture through the universal language of local flavors.</p>
-          <div style="margin-top: 15px;">
-            <a href="interests/food.html" class="detail-btn">Read More →</a>
-          </div>
-        </article>
-
-      </div>
-    </section>
+  <main class="wrap main-block">
+    <div class="card-grid">
+      <article class="card-item">
+        <h3>Hiking &amp; Nature</h3>
+        <p>Finding balance and clarity through the scenic trails of the Tri-state area.</p>
+        <div class="card-actions"><a class="detail-link" href="interests/hiking.html">Read more →</a></div>
+      </article>
+      <article class="card-item">
+        <h3>Gym</h3>
+        <p>A systematic, data-driven approach to training and health.</p>
+        <div class="card-actions"><a class="detail-link" href="interests/fitness.html">Read more →</a></div>
+      </article>
+      <article class="card-item">
+        <h3>Rock Climbing</h3>
+        <p>Vertical puzzle-solving for mind and body.</p>
+        <div class="card-actions"><a class="detail-link" href="interests/climbing.html">Read more →</a></div>
+      </article>
+      <article class="card-item">
+        <h3>Travel &amp; Exploration</h3>
+        <p>New landscapes and traditions.</p>
+        <div class="card-actions"><a class="detail-link" href="interests/travel.html">Read more →</a></div>
+      </article>
+      <article class="card-item">
+        <h3>Foodie</h3>
+        <p>Culture through flavor.</p>
+        <div class="card-actions"><a class="detail-link" href="interests/food.html">Read more →</a></div>
+      </article>
+    </div>
   </main>
+</div>
 
-  <footer class="container footer">
-    <small>© <span id="year"></span> SmallSheep</small>
-  </footer>
-
-  <script src="script.js"></script>
+<footer class="site-footer">
+  <div class="wrap fi">
+    <p>© <span id="year"></span> Alex Yang · SmallSheep</p>
+    <p><a href="index.html">Home</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

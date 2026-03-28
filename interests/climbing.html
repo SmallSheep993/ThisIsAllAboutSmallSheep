@@ -1,107 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rock Climbing | Alex Yang</title>
-  <link rel="stylesheet" href="../style.css" />
-  <style>
-    /* Custom styles for the Climbing Page */
-    .climbing-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr; 
-      gap: 30px;
-      margin-top: 30px;
-    }
-
-    .climbing-item {
-      overflow: hidden;
-      border-radius: 20px;
-      aspect-ratio: 1 / 1.2; 
-      background: var(--bg-soft);
-      border: 1px solid var(--border);
-      transition: transform 0.3s ease;
-    }
-
-    .climbing-item:hover {
-      transform: scale(1.02);
-    }
-
-    .climbing-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; 
-      display: block;
-    }
-
-    @media (max-width: 600px) {
-      .climbing-grid {
-        grid-template-columns: 1fr; /* On mobile, 1 column is better for 1:1.2 images */
-        gap: 5px;
-      }
-      .climbing-item {
-        border-radius: 12px;
-      }
-    }
-  </style>
+  <meta name="theme-color" content="#f6f7fb" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../site.css" />
 </head>
-
 <body>
-  <header class="container header">
-    <nav class="nav">
-      <a class="brand" href="../things.html">← Back to Things I Like</a>
-      <div class="nav-links">
-        <a href="../projects.html">Projects</a>
-        <a href="../things.html">Things I Like</a>
-        <a href="../movies.html">Movie list</a>
-      </div>
-    </nav>
 
-    <div class="hero" style="padding: 60px 0 20px;">
-      <h1>Rock Climbing</h1>
-      <p class="subtitle" style="margin-top: 16px;">
-        Bouldering, indoor rock climbing, outdoor climbing.
-      </p>
-    </div>
+<div class="amb a1"></div>
+<div class="amb a2"></div>
+
+<nav>
+  <div class="wrap ni">
+    <a class="nl" href="../index.html"><div class="nd"></div>SmallSheep</a>
+    <ul class="nlinks">
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../things.html">Things I Like</a></li>
+      <li><a href="../movies.html">Movie list</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:alexxyang993@gmail.com" class="nbtn">Email Me</a>
+  </div>
+</nav>
+
+<div class="page-main">
+  <header class="wrap sub-hero">
+    <p class="breadcrumb"><a href="../things.html">← Things I Like</a></p>
+    <div class="ey">Vertical</div>
+    <h1 class="ph-title">Rock climbing</h1>
+    <p class="ph-sub">Bouldering, indoor climbing, and a bit of outdoor.</p>
   </header>
 
-  <main class="container">
-    
-    <section class="section">
-      <h2>My Climbing Story</h2>
-      <div style="max-width: 800px; line-height: 1.8;">
-        <p>
-          I would definitely not call myself an elite climber by any means lol, but climbing has become a part of my life. Most of my time is spent in the indoor gym, where the controlled environment allows me to focus purely on technique and strength. While I have only ventured into outdoor climbing once, that single experience gave me a profound respect for the raw nature of the sport.
-        </p>
-        <p style="margin-top: 1.5rem;">
-          Currently, I am working through <strong>V5 problems</strong>. For me, V5 represents that sweet spot where brute strength isn't enough—you need to start "reading" the wall and optimizing your body positioning. It’s a physical puzzle that demands both persistence and a calm mind. 
-        </p>
-        <p style="margin-top: 1.5rem;">
-          Looking ahead, I hope to continue this journey, deepening my passion for the sport. My goal is simple: to keep showing up, keep learning, and eventually become truly <em>good at it</em>.
-        </p>
+  <main class="wrap main-block">
+    <section class="section-block">
+      <h2 class="section-title">My climbing story</h2>
+      <div class="prose">
+        <p>I'm not an elite climber — but climbing is part of my life. Most of my time is in the gym; I've only been outdoors once, and it gave me huge respect for the sport.</p>
+        <p>I'm working through <strong>V5</strong> problems: strength alone isn't enough — you have to read the wall and position your body. It's a puzzle that needs persistence and a calm mind.</p>
+        <p>Goal: keep showing up, keep learning, and get truly good at it.</p>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Gallery</h2>
-      <p class="muted">Visual log of my progress and favorite sessions.</p>
-      
+    <section class="section-block">
+      <h2 class="section-title">Gallery</h2>
+      <p class="ph-sub" style="margin-bottom:16px">Progress and favorite sessions.</p>
       <div class="climbing-grid">
-        <div class="climbing-item"><img src="../assets/climbing/1.jpg" alt="Climbing Log 1"></div>
-        <div class="climbing-item"><img src="../assets/climbing/2.jpg" alt="Climbing Log 2"></div>
-        <div class="climbing-item"><img src="../assets/climbing/3.jpg" alt="Climbing Log 3"></div>
-        <div class="climbing-item"><img src="../assets/climbing/4.jpg" alt="Climbing Log 4"></div>
-        <div class="climbing-item"><img src="../assets/climbing/5.jpg" alt="Climbing Log 5"></div>
-        <div class="climbing-item"><img src="../assets/climbing/6.jpg" alt="Climbing Log 6"></div>
+        <div class="climbing-item"><img src="../assets/climbing/1.jpg" alt="Climbing" /></div>
+        <div class="climbing-item"><img src="../assets/climbing/2.jpg" alt="Climbing" /></div>
+        <div class="climbing-item"><img src="../assets/climbing/3.jpg" alt="Climbing" /></div>
+        <div class="climbing-item"><img src="../assets/climbing/4.jpg" alt="Climbing" /></div>
+        <div class="climbing-item"><img src="../assets/climbing/5.jpg" alt="Climbing" /></div>
+        <div class="climbing-item"><img src="../assets/climbing/6.jpg" alt="Climbing" /></div>
       </div>
     </section>
-
   </main>
+</div>
 
-  <footer class="container footer">
-    <small>© <span id="year"></span> SmallSheep</small>
-  </footer>
-
-  <script src="../script.js"></script>
+<footer class="site-footer">
+  <div class="wrap fi">
+    <p>© <span id="year"></span> Alex Yang · SmallSheep</p>
+    <p><a href="../things.html">Things I Like</a></p>
+  </div>
+</footer>
+<script src="../script.js"></script>
 </body>
 </html>
